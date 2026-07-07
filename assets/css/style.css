@@ -117,3 +117,86 @@ ul {
     margin: 0 auto;
 
 }
+
+/* ===========================
+   HEADER
+=========================== */
+
+.header {
+
+    background-color: var(--color-white); /* Color de fondo blanco */
+
+    box-shadow: var(--shadow); /* Sombra para dar profundidad */
+
+    position: sticky; /* Hace que el header se quede fijo al hacer scroll */
+
+    top: 0; /* Posición superior para que se quede en la parte superior de la página */
+
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar {
+
+    display: flex; /* Utiliza Flexbox para organizar los elementos del navbar */
+
+    justify-content: space-between; /* Distribuye los elementos a lo largo del eje horizontal */
+
+    align-items: center; /* Centra los elementos verticalmente */
+
+    height: 90px; /* Altura del navbar */
+
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo {
+
+    font-size: 1.8rem;
+
+    font-weight: 700;
+
+    color: var(--color-primary);
+
+}
+
+/* ===========================
+   MENÚ DE NAVEGACIÓN
+=========================== */
+
+.nav-menu {
+
+    display: flex;
+
+    gap: var(--spacing-md); /* Espacio entre los elementos del menú */
+
+}
+
+/* ===========================
+    ENLACES DE NAVEGACIÓN
+=========================== */
+
+.nav-link {
+
+    font-weight: 500;
+
+    transition: .3s;
+
+}
+
+/* ===========================
+    Cambio de color al pasar el mouse sobre los enlaces de navegación
+=========================== */
+
+.nav-link:hover {
+
+    color: var(--color-primary);
+
+}
+
