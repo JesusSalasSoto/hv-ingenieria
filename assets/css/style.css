@@ -1,0 +1,119 @@
+/* ===========================
+   RESET CSS
+=========================== */
+
+*{
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina los rellenos predeterminados */
+    box-sizing: border-box; /* Hace que el cálculo de tamaños sea mucho más sencillo y predecible */
+}
+
+/* ===========================
+   VARIABLES GLOBALES
+=========================== */
+
+:root {
+
+    /* ===== Colores ===== */
+    --color-primary: #0EA5A8;
+    --color-primary-dark: #0B7E80;
+
+    --color-dark: #1F2937;
+    --color-gray: #6B7280;
+
+    --color-light: #F8FAFC;
+    --color-white: #FFFFFF;
+
+    /* ===== Tipografía ===== */
+    --font-primary: "Poppins", sans-serif;
+
+    /* ===== Espaciados ===== */
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 32px;
+    --spacing-lg: 64px;
+    --spacing-xl: 96px;
+
+    /* ===== Bordes ===== */
+    --border-radius: 10px;
+
+    /* ===== Sombras ===== */
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+}
+
+/* ===========================
+   ESTILOS GENERALES
+=========================== */
+
+body {
+
+    font-family: var(--font-primary); /* Hace que toda la página utilice Poppins */
+
+    background-color: var(--color-light);
+
+    color: var(--color-dark); /* Color principal del texto */
+
+    line-height: 1.6; /* Controla el espacio entre líneas */
+
+    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal */
+
+}
+
+/* ===========================
+   TRANCISION SUAVE
+=========================== */
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+/* ===========================
+   TAMAÑO DE IMÁGENES
+=========================== */
+
+img {
+
+    max-width: 100%;
+
+    display: block;
+
+}
+
+/* ===========================
+   ENLACES
+=========================== */
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+/* ===========================
+    LISTAS
+=========================== */
+
+ul {
+
+    list-style: none;
+
+}
+
+/* ===========================
+    CONTENEDOR PRINCIPAL
+=========================== */
+
+.container {
+
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+}
