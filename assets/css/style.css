@@ -148,7 +148,7 @@ ul {
 
     align-items: center; /* Centra los elementos verticalmente */
 
-    height: 90px; /* Altura del navbar */
+    height: 110px; /* Altura del navbar */
 
 }
 
@@ -158,11 +158,17 @@ ul {
 
 .logo {
 
-    font-size: 1.8rem;
+    display: flex;
 
-    font-weight: 700;
+    align-items: center;
 
-    color: var(--color-primary);
+}
+
+.logo img {
+
+    height: 150px;
+
+    width: auto;
 
 }
 
@@ -174,7 +180,7 @@ ul {
 
     display: flex;
 
-    gap: var(--spacing-md); /* Espacio entre los elementos del menú */
+    gap: 40px; /* Espacio entre los elementos del menú */
 
 }
 
@@ -188,6 +194,7 @@ ul {
 
     transition: .3s;
 
+
 }
 
 /* ===========================
@@ -197,6 +204,179 @@ ul {
 .nav-link:hover {
 
     color: var(--color-primary);
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero { /* Sección principal de la página */
+
+    padding: 80px 0; /* Espaciado superior e inferior del hero */
+
+    background: linear-gradient(to bottom, #f8fafc, #ffffff); /* Degradado de color para el fondo del hero */
+
+}
+
+.hero-content {
+
+    display: flex; /* Utiliza Flexbox para organizar el contenido del hero */
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 60px;
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-text h1{/* Título principal del hero */
+
+    font-size:3.5rem;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+    margin-bottom:25px;
+
+}
+
+.hero-text span{/* Resalta una parte del título principal del hero */
+
+    color:var(--color-primary);
+
+}
+
+.hero-text p{/* Descripción del hero */
+
+    font-size:1.1rem;
+
+    color:var(--color-gray);
+
+    margin-bottom:35px;
+
+    max-width:600px;
+
+}
+
+.hero-buttons{/* Contenedor de los botones del hero */
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.hero-image {
+
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    position: relative;
+
+    padding: 20px;
+
+}
+
+.hero-image img {
+
+    width: 100%;
+
+    max-width: 550px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+
+    animation: floating 6s ease-in-out infinite;
+
+}
+
+
+@keyframes floating {
+
+    0% {
+
+        transform: translateY(0px);
+
+    }
+
+    50% {
+
+        transform: translateY(-8px);
+
+    }
+
+    100% {
+
+        transform: translateY(0px);
+
+    }
+
+}
+
+/* ===========================
+   BOTONES
+=========================== */
+
+.btn{
+
+    display:inline-block;
+
+    padding:15px 30px;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-primary{
+
+    background:var(--color-primary);
+
+    color:white;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--color-primary-dark);
+
+    transform:translateY(-3px);
+
+}
+
+.btn-secondary{
+
+    border:2px solid var(--color-primary);
+
+    color:var(--color-primary);
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--color-primary);
+
+    color:white;
+
+    transform:translateY(-3px);
 
 }
 
