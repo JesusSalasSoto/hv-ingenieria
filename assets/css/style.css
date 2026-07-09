@@ -211,39 +211,55 @@ ul {
    HERO
 =========================== */
 
-.hero { /* Sección principal de la página */
+.hero{
 
-    padding: 80px 0; /* Espaciado superior e inferior del hero */
+    padding:120px 0;
+    background:linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #eef8f9 100%
+    );
 
-    background: linear-gradient(to bottom, #f8fafc, #ffffff); /* Degradado de color para el fondo del hero */
-
-}
-
-.hero-content {
-
-    display: flex; /* Utiliza Flexbox para organizar el contenido del hero */
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    gap: 60px;
+    margin-top: 30px;
 
 }
 
-.hero-text{
+.hero-container{
 
-    flex:1;
+    display:flex;
 
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:60px;
+
+}
+
+.hero-content{
+
+    flex:1.2;
+
+}
+
+.hero-image{
+
+    flex:.8;
+
+}
+
+.hero h1 span{
+    display:block;
+    color:var(--color-primary);
 }
 
 .hero-text h1{/* Título principal del hero */
 
-    font-size:3.5rem;
+    font-size:3.4rem;
 
     font-weight:700;
 
-    line-height:1.2;
+    line-height:1.15;
 
     margin-bottom:25px;
 
@@ -275,22 +291,6 @@ ul {
 
 }
 
-.hero-image {
-
-    flex: 1;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    position: relative;
-
-    padding: 20px;
-
-}
-
 .hero-image img {
 
     width: 100%;
@@ -302,6 +302,20 @@ ul {
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
 
     animation: floating 6s ease-in-out infinite;
+
+}
+
+.hero-list{
+
+    margin-bottom:40px;
+
+}
+
+.hero-list li{
+
+    margin-bottom:15px;
+
+    font-weight:500;
 
 }
 
@@ -380,3 +394,269 @@ ul {
 
 }
 
+/* ===========================
+   CARACTERISTICAS
+=========================== */
+
+.features{/* Contenedor de la sección de características */
+
+    padding:80px 0;
+    background: #f8fafc;
+
+}
+
+.features-grid{/* Contenedor de la cuadrícula de características */
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.feature-card{/* Tarjeta individual de característica */
+
+    background:var(--color-white);
+
+    padding:35px 25px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s ease;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12);
+
+}
+
+.feature-icon{
+
+    font-size:2.7rem;
+
+    margin-bottom:20px;
+
+}
+
+.feature-card h3{
+
+    margin-bottom:15px;
+
+    font-size:1.2rem;
+
+}
+
+.feature-card p{
+
+    color:var(--color-gray);
+
+    font-size:.95rem;
+
+}
+
+.feature-icon{/* Icono de la característica */
+
+    width:70px;
+
+    height:70px;
+
+    margin:0 auto 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(14,165,168,.10);
+
+    font-size:2rem;
+
+}
+
+/* ===========================
+   SERVICIOS
+=========================== */
+
+.services{ /* Contenedor de la sección de servicios */
+
+    padding:100px 0;
+
+}
+
+.section-header{ /* Contenedor del encabezado de la sección de servicios */
+
+    text-align:center;
+
+    max-width:700px;
+
+    margin:0 auto 60px;
+
+}
+
+.section-header h2{ /* Título de la sección de servicios */
+
+    font-size:2.5rem;
+
+    margin-bottom:20px;
+
+}
+
+.section-header p{ /* Descripción de la sección de servicios */
+
+    color:var(--color-gray);
+
+    font-size:1.05rem;
+
+}
+
+.services-grid{ /* Contenedor de la cuadrícula de servicios */
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.service-card{ /* Tarjeta individual de servicio */
+
+    background: var(--color-white);
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    transition: .35s ease;
+
+}
+
+.service-card:hover{ /* Efecto al pasar el mouse sobre la tarjeta de servicio */
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.service-image{ /* Contenedor de la imagen del servicio */
+
+    overflow: hidden;
+
+}
+
+.service-image img{ /* Imagen del servicio */
+
+    width:100%;
+
+    height:230px;
+
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.service-card:hover .service-image img{ /* Efecto de zoom al pasar el mouse sobre la imagen del servicio */
+
+    transform:scale(1.08);
+
+}
+
+.service-content{ /* Contenido de la tarjeta de servicio */
+
+    padding:35px;
+
+}
+
+.service-content h3{/* Título del servicio */
+
+    position:relative;
+
+    display:inline-block;
+
+}
+
+.service-content h3::after{ /* Línea decorativa debajo del título del servicio */
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-2px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--color-primary);
+
+    transition:.35s;
+
+}
+
+.service-card:hover h3::after{ /* Efecto de animación de la línea decorativa al pasar el mouse sobre la tarjeta de servicio */
+
+    width:100%;
+
+}
+
+.service-content p{/* Descripción del servicio */
+
+    color:var(--color-gray);
+
+    margin-bottom:25px;
+
+}
+
+.service-link{ /* Estilo del enlace de "Leer más" en la tarjeta de servicio */
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: var(--color-primary);
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.service-link span{ /* Estilo del icono de flecha en el enlace de "Leer más" */
+
+    transition:.3s ease; 
+
+}
+
+.service-link:hover{ /* Cambia el color del enlace al pasar el mouse */
+
+    letter-spacing:1px;
+
+    color: var(--color-primary-dark);
+
+}
+
+.service-card:hover .service-link span{ /* Efecto de animación al pasar el mouse sobre el enlace de "Leer más" */
+
+    transform:translateX(6px);
+
+}
