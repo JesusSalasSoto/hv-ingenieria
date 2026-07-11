@@ -431,7 +431,7 @@ ul {
 
 }
 
-.feature-card:hover{
+.feature-card:hover{ /* Efecto al pasar el mouse sobre la tarjeta de característica */
 
     transform:translateY(-10px);
 
@@ -439,7 +439,7 @@ ul {
 
 }
 
-.feature-icon{
+.feature-icon{ /* Icono de la característica */
 
     font-size:2.7rem;
 
@@ -447,7 +447,7 @@ ul {
 
 }
 
-.feature-card h3{
+.feature-card h3{ /* Título de la característica */
 
     margin-bottom:15px;
 
@@ -455,7 +455,7 @@ ul {
 
 }
 
-.feature-card p{
+.feature-card p{ /* Descripción de la característica */
 
     color:var(--color-gray);
 
@@ -543,6 +543,10 @@ ul {
 
     transition: .35s ease;
 
+    display: flex;
+
+    flex-direction: column;
+
 }
 
 .service-card:hover{ /* Efecto al pasar el mouse sobre la tarjeta de servicio */
@@ -580,6 +584,12 @@ ul {
 .service-content{ /* Contenido de la tarjeta de servicio */
 
     padding:35px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex:1;
 
 }
 
@@ -639,6 +649,8 @@ ul {
 
     transition: .3s;
 
+    margin-top:auto;
+
 }
 
 .service-link span{ /* Estilo del icono de flecha en el enlace de "Leer más" */
@@ -660,3 +672,170 @@ ul {
     transform:translateX(6px);
 
 }
+
+/* ===========================
+   NOSOTROS
+=========================== */
+
+.about{ /* Contenedor de la sección de nosotros */
+
+    padding:100px 0;
+
+    background:#F8FAFC;
+
+}
+
+.about-content{ /* Contenedor del contenido de la sección de nosotros */
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.about-image img{ /* Imagen de la sección de nosotros */
+
+    width:100%;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.about-image{ /* Contenedor de la imagen de la sección de nosotros */
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+}
+
+.about-image:hover img{ /* Efecto de zoom al pasar el mouse sobre la imagen de la sección de nosotros */
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   TAREJAS DE INFORMACIÓN
+=========================== */
+
+.about-info{ /* Contenedor de las tarjetas de información de la sección de nosotros */
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.about-card{
+
+    background:var(--color-white);
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s ease;
+
+}
+
+.about-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.about-card h3{
+
+    color:var(--color-primary);
+
+    margin-bottom:15px;
+
+}
+
+.about-card p{
+
+    color:var(--color-gray);
+
+}
+
+/*===========================
+        VALORES
+===========================*/
+
+.values{
+
+    margin-top:100px;
+
+}
+
+.values-grid{ /* Contenedor de la cuadrícula de valores */
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); /* Ajusta automáticamente el número de columnas según el tamaño de la pantalla */
+
+    gap:25px;
+
+}
+
+.value-card{ /* Tarjeta individual de valor */
+
+    background:var(--color-white);
+
+    border-radius:18px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.value-card:hover{ /* Efecto al pasar el mouse sobre la tarjeta de valor */
+
+    transform:translateY(-10px);
+
+}
+
+.value-card span{ /* Icono de la tarjeta de valor */
+
+    font-size:40px;
+
+    display:block;
+
+    margin-bottom:18px;
+
+}
+
+.value-card i{ /* Icono de la tarjeta de valor */
+
+    font-size:45px;
+
+    color:var(--color-primary);
+
+    margin-bottom:20px;
+
+}
+
+.value-card:hover i{
+
+    transform:scale(1.15);
+
+}
+
