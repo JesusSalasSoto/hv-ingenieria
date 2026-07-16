@@ -839,3 +839,221 @@ ul {
 
 }
 
+/*===========================
+        PROYECTOS
+===========================*/
+
+.projects{
+
+    padding:100px 0;
+
+    background:var(--color-white);
+
+}
+
+.projects-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+}
+
+/*===========================
+     PROYECTOs
+===========================*/
+
+.project-feature{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:40px;
+
+}
+
+.project-main-image{ /* Imagen principal del proyecto destacado */
+
+    width:100%;
+
+    height:400px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.project-thumbnails{ /* Contenedor de las miniaturas del proyecto destacado */
+
+    display:flex;
+
+    gap:20px;
+
+    margin-top:20px;
+
+}
+
+.project-thumbnails img{
+
+    width:140px;
+
+    height:90px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.project-thumbnails img:hover{ /* Efecto al pasar el mouse sobre las miniaturas del proyecto destacado */
+
+    transform:translateY(-5px);
+
+}
+
+.project-info{ /* Contenedor de la información del proyecto destacado */
+
+    max-width:850px;
+
+}
+
+.project-info h3{ /* Título del proyecto destacado */
+
+    margin-bottom:20px;
+
+    color:var(--color-dark);
+
+}
+
+.project-info p{ /* Descripción del proyecto destacado */
+
+    margin-bottom:30px;
+
+    color:var(--color-gray);
+
+}
+
+/*===========================
+        CONTACTO
+===========================*/
+
+.contact{
+
+    padding:100px 0;
+
+    background:var(--color-light);
+
+}
+
+.contact-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 1.3fr;
+
+    gap:60px;
+
+    align-items:start;
+
+}
+
+.contact-info h3{
+
+    margin-bottom:20px;
+
+}
+
+.contact-info p{
+
+    color:var(--color-gray);
+
+}
+
+.contact-cards{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    margin-top:35px;
+
+}
+
+.contact-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    background:var(--color-white);
+
+    padding:22px;
+
+    border-radius:16px;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateX(8px);
+
+}
+
+.contact-card i{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(14,165,168,.12);
+
+    color:var(--color-primary);
+
+    font-size:24px;
+
+    flex-shrink:0;
+
+}
+
+.contact-card h4{
+
+    margin-bottom:6px;
+
+    color:var(--color-dark);
+
+}
+
+.contact-card p{
+
+    margin:0;
+
+    color:var(--color-gray);
+
+}
+
