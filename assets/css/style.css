@@ -1297,3 +1297,25 @@ ul {
 
 }
 
+.whatsapp-card{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+.whatsapp-card:hover{
+
+    border-color:#25D366;
+
+}
+
+.whatsapp-card:hover i{
+
+    background:#25D366;
+
+    color:var(--color-white);
+
+}
+
