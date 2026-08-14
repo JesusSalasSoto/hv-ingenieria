@@ -680,6 +680,172 @@ ul {
 }
 
 /* ===========================
+   MODAL DE SERVICIOS
+=========================== */
+
+.service-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.65);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:30px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s ease;
+
+    z-index:9999;
+
+}
+
+.service-modal.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.service-modal-content{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:950px;
+
+    max-height:90vh;
+
+    overflow:auto;
+
+    background:var(--color-white);
+
+    border-radius:22px;
+
+    box-shadow:0 25px 70px rgba(0,0,0,.25);
+
+    transform:scale(.85);
+
+    transition:.35s ease;
+
+}
+
+.service-modal.active .service-modal-content{
+
+    transform:scale(1);
+
+}
+
+.service-modal-image img{
+
+    width:100%;
+
+    height:360px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.service-modal-info{
+
+    padding:35px;
+
+}
+
+.service-modal-info h2{
+
+    margin-bottom:15px;
+
+    color:var(--color-dark);
+
+}
+
+.service-modal-info > p{
+
+    color:var(--color-gray);
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+.service-modal-close{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.95);
+
+    color:var(--color-dark);
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    z-index:2;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.service-modal-close:hover{
+
+    transform:rotate(90deg);
+
+    color:var(--color-primary);
+
+}
+
+#modalServiceDetails{
+
+    color:var(--color-gray);
+
+    line-height:1.8;
+
+}
+
+#modalServiceDetails ul{
+
+    padding-left:20px;
+
+    margin-top:15px;
+
+}
+
+#modalServiceDetails li{
+
+    margin-bottom:8px;
+
+}
+
+/* ===========================
    NOSOTROS
 =========================== */
 
@@ -847,10 +1013,6 @@ ul {
 
 /*===========================
         PROYECTOS
-===========================*/
-
-/*===========================
-      PROJECT GALLERY
 ===========================*/
 
 .project-gallery{
