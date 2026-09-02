@@ -55,14 +55,21 @@ const servicesData = {
         image: "assets/img/servicios/diseño_subestaciones.jpeg",
 
         description:
-            "Diseño de subestaciones eléctricas orientado a garantizar seguridad, eficiencia y confiabilidad en la distribución de energía.",
+            "Desarrollamos ingeniería para subestaciones eléctricas de media y alta tensión, así como para celdas de media tensión (Metal-Clad, Metal-Enclosed, Switchgear, interruptores en vacío, SF₆ y RMU), desde la definición de criterios de diseño hasta la ingeniería de detalle y documentación técnica.Diseñamos soluciones considerando la integración de equipos de potencia, protección, medición, control y puesta a tierra, de acuerdo con los requerimientos específicos de cada proyecto.",
 
         details: `
             <ul>
-                <li>Diseño y desarrollo de subestaciones eléctricas.</li>
-                <li>Definición de soluciones de acuerdo con las necesidades del proyecto.</li>
-                <li>Consideración de criterios de seguridad y confiabilidad.</li>
-                <li>Cumplimiento de normativas y requerimientos aplicables.</li>
+                <li>Diseño y configuración de subestaciones eléctricas.</li>
+                <li>Celdas de media tensión (Metal-Clad, Metal-Enclosed, Switchgear, interruptores en vacío, SF₆ y RMU).</li>
+                <li>Diagramas unifilares y esquemas de conexión.</li>
+                <li>Sistemas de protección, medición y control.</li>
+                <li>Arreglos y distribución de equipos.</li>
+                <li>Diseño de sistemas de puesta a tierra.</li>
+                <li>Canalizaciones y rutas de cableado.</li>
+                <li>Selección y especificación de equipos.</li>
+                <li>Planos de ingeniería y diagramas de control.</li>
+                <li>Memorias de cálculo y documentación técnica.</li>
+                <li>Aplicación de normas NOM, NMX, CFE, IEC e IEEE, según corresponda.</li>
             </ul>
         `
 
@@ -75,14 +82,29 @@ const servicesData = {
         image: "assets/img/servicios/ingenieria_electrica.jpeg",
 
         description:
-            "Desarrollo de proyectos de ingeniería eléctrica con soluciones adaptadas a las necesidades técnicas y operativas de cada instalación.",
+            "Desarrollamos proyectos de ingeniería eléctrica adaptados a las necesidades técnicas y operativas de cada instalación, integrando criterios de diseño, cálculo, selección de equipos y documentación técnica.Nuestra ingeniería abarca sistemas de fuerza, distribución, control e iluminación, desde las etapas conceptuales hasta el desarrollo de ingeniería de detalle, buscando soluciones seguras, funcionales, eficientes y técnicamente viables.",
 
         details: `
             <ul>
-                <li>Desarrollo de ingeniería eléctrica.</li>
-                <li>Diseño de soluciones para instalaciones eléctricas.</li>
-                <li>Integración de criterios técnicos y de seguridad.</li>
-                <li>Soluciones orientadas a la eficiencia y confiabilidad.</li>
+                <li>Ingeniería conceptual, básica y de detalle.</li>
+                <li>Diagramas unifilares.</li>
+                <li>Diagramas de control y conexión.</li>
+                <li>Cuadros de carga y balance de cargas.</li>
+                <li>Cálculo y selección de conductores.</li>
+                <li>Cálculo y selección de canalizaciones.</li>
+                <li>Selección y dimensionamiento de equipos eléctricos.</li>
+                <li>Diseño de alimentadores y circuitos derivados.</li>
+                <li>Diseño de sistemas de distribución eléctrica.</li>
+                <li>Diseño de tableros eléctricos.</li>
+                <li>Sistemas de fuerza y control.</li>
+                <li>Diseño de sistemas de iluminación.</li>
+                <li>Cálculos y distribución de luminarias.</li>
+                <li>Diseño de alumbrado interior y exterior.</li>
+                <li>Planos eléctricos.</li>
+                <li>Memorias de cálculo.</li>
+                <li>Especificaciones técnicas.</li>
+                <li>Catálogos y listas de materiales.</li>
+                <li>Integración de documentación técnica para construcción y ejecución.</li>
             </ul>
         `
 
@@ -95,14 +117,22 @@ const servicesData = {
         image: "assets/img/servicios/gestion_cfe.jpeg",
 
         description:
-            "Asesoría y gestión de trámites relacionados con la contratación, ampliación y modificación de servicios eléctricos ante la Comisión Federal de Electricidad.",
+            "Brindamos asesoría y acompañamiento técnico en los procesos relacionados con la Comisión Federal de Electricidad (CFE), desde la definición de requerimientos y preparación del proyecto hasta el seguimiento de trámites y atención de observaciones. Apoyamos a nuestros clientes en la gestión de nuevos servicios, ampliaciones, modificaciones y aumentos de carga, incluyendo la integración y seguimiento de proyectos a través de SISPROTER, conforme a los requerimientos técnicos y administrativos aplicables.",
 
         details: `
             <ul>
-                <li>Gestión de trámites ante CFE.</li>
-                <li>Contratación de servicios eléctricos.</li>
+                <li>Gestión de nuevos servicios eléctricos.</li>
+                <li>Contratación de servicios en media y alta tensión.</li>
                 <li>Aumentos y modificaciones de carga.</li>
-                <li>Asesoría durante el proceso de gestión.</li>
+                <li>Ampliación de servicios existentes.</li>
+                <li>Gestión y seguimiento de proyectos mediante SISPROTER.</li>
+                <li>Integración y revisión de documentación para SISPROTER.</li>
+                <li>Elaboración y revisión de proyectos eléctricos para trámite.</li>
+                <li>Revisión de requerimientos técnicos de CFE.</li>
+                <li>Seguimiento de solicitudes y trámites.</li>
+                <li>Atención y seguimiento de observaciones.</li>
+                <li>Coordinación técnica con las áreas correspondientes de CFE.</li>
+                <li>Asesoría durante el proceso de conexión y puesta en operación.</li>
             </ul>
         `
 
@@ -135,14 +165,25 @@ const servicesData = {
         image: "assets/img/servicios/calidad_energia.jpeg",
 
         description:
-            "Ofrecemos servicios de inspección termográfica para la evaluación de instalaciones eléctricas, subestaciones, tableros, transformadores y equipos críticos. Nuestro personal certificado utiliza tecnología de última generación para identificar condiciones anormales de temperatura, permitiendo detectar de manera temprana posibles fallas y tomar acciones correctivas antes de que se conviertan en incidentes operativos. Este servicio contribuye a incrementar la seguridad, confiabilidad y continuidad de la operación, reduciendo costos asociados a paros no programados y mantenimientos correctivos.",
+            "Realizamos estudios eléctricos especializados para analizar el comportamiento de instalaciones y sistemas de potencia, identificar condiciones de riesgo y validar su operación bajo diferentes escenarios. Los resultados permiten verificar diseños, optimizar la operación, seleccionar adecuadamente equipos y establecer criterios de protección, contribuyendo a una instalación más segura y confiable.",
 
         details: `
             <ul>
-                <li>Estudios de cortocircuito.</li>
-                <li>Flujo de carga.</li>
-                <li>Coordinación de protecciones.</li>
-                <li>Análisis de calidad de energía.</li>
+                <li>Estudio de flujo de carga.</li>
+                <li>Estudio de cortocircuito.</li>
+                <li>Coordinación y selectividad de protecciones.</li>
+                <li>Estudios de puesta a tierra.</li>
+                <li>Cálculo de mallas de puesta a tierra.</li>
+                <li>Análisis de tensiones de paso y contacto.</li>
+                <li>Estudios de calidad de energía.</li>
+                <li>Análisis de armónicos y distorsión.</li>
+                <li>Análisis de factor de potencia.</li>
+                <li>Análisis de desbalance de tensión y corriente.</li>
+                <li>Análisis de variaciones de tensión.</li>
+                <li>Cálculo de caída de tensión.</li>
+                <li>Evaluación de capacidad de conductores y equipos.</li>
+                <li>Análisis de condiciones de operación del sistema.</li>
+                <li>Estudios para selección y ajuste de protecciones.</li>
             </ul>
         `
 
@@ -150,19 +191,33 @@ const servicesData = {
 
     calidad: {
 
-        title: "Calidad de Energía",
+        title: "Pruebas Eléctricas",
 
         image: "assets/img/servicios/calidad.jpeg",
 
         description:
-            "Ofrecemos servicios especializados de evaluación y análisis de calidad de la energía eléctrica para instalaciones industriales, comerciales e institucionales. Mediante equipos de medición y monitoreo de alta precisión, identificamos problemas como variaciones de tensión, hundimientos y sobretensiones, desbalances de voltaje y corriente, factor de potencia deficiente, armónicos y otros fenómenos que pueden afectar el desempeño y la vida útil de los equipos eléctricos. Nuestros estudios permiten diagnosticar las condiciones de operación de las instalaciones, determinar el cumplimiento de los parámetros aplicables y desarrollar soluciones orientadas a mejorar la eficiencia energética, la confiabilidad de los sistemas y la continuidad operativa. Contamos con personal capacitado y experiencia en el análisis de redes eléctricas, garantizando resultados precisos y recomendaciones técnicas adaptadas a las necesidades de cada cliente.",
+            "Ejecutamos pruebas, mediciones e inspecciones eléctricas para evaluar la condición de equipos e instalaciones, identificar posibles fallas y verificar su correcto funcionamiento antes y durante su operación. Utilizamos equipos especializados y metodologías de prueba adecuadas para cada aplicación, proporcionando información técnica para diagnóstico, mantenimiento y puesta en servicio.",
 
         details: `
             <ul>
-                <li>Evaluación del desempeño eléctrico.</li>
-                <li>Identificación de problemas de calidad de energía.</li>
-                <li>Análisis de condiciones de operación.</li>
-                <li>Recomendaciones para mejorar la confiabilidad.</li>
+                <li>Pruebas VLF en cables de media tensión.</li>
+                <li>Resistencia de aislamiento.</li>
+                <li>Resistencia de devanados.</li>
+                <li>Relación de transformación (TTR).</li>
+                <li>Factor de potencia y tan δ.</li>
+                <li>Resistencia de contactos.</li>
+                <li>Pruebas a transformadores.</li>
+                <li>Pruebas a interruptores.</li>
+                <li>Pruebas a cables de media tensión.</li>
+                <li>Pruebas y verificación de relevadores de protección.</li>
+                <li>Pruebas funcionales de sistemas eléctricos.</li>
+                <li>Termografía infrarroja de equipos e instalaciones eléctricas.</li>
+                <li>Inspección termográfica de tableros, conexiones, transformadores y equipos de distribución.</li>
+                <li>Medición de resistividad del terreno.</li>
+                <li>Medición de resistencia de sistemas de puesta a tierra.</li>
+                <li>Continuidad de conductores de protección y puesta a tierra.</li>
+                <li>Diagnóstico y evaluación de instalaciones eléctricas.</li>
+                <li>Pruebas para puesta en servicio.</li>
             </ul>
         `
 
