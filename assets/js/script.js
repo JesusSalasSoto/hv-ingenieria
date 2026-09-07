@@ -138,31 +138,12 @@ const servicesData = {
 
     },
 
-    puesta: {
-
-        title: "Sistemas de Puesta a Tierra",
-
-        image: "assets/img/servicios/puesta_tierra.jpeg",
-
-        description:
-            "Diseño y cálculo de sistemas de puesta a tierra destinados a mejorar la seguridad de las instalaciones y proteger equipos y personas.",
-
-        details: `
-            <ul>
-                <li>Diseño de sistemas de puesta a tierra.</li>
-                <li>Cálculo de los sistemas requeridos.</li>
-                <li>Evaluación de las condiciones de la instalación.</li>
-                <li>Enfoque en seguridad y protección eléctrica.</li>
-            </ul>
-        `
-
-    },
 
     estudios: {
 
         title: "Estudios Eléctricos",
 
-        image: "assets/img/servicios/calidad_energia.jpeg",
+        image: "assets/img/servicios/calidad.jpeg",
 
         description:
             "Realizamos estudios eléctricos especializados para analizar el comportamiento de instalaciones y sistemas de potencia, identificar condiciones de riesgo y validar su operación bajo diferentes escenarios. Los resultados permiten verificar diseños, optimizar la operación, seleccionar adecuadamente equipos y establecer criterios de protección, contribuyendo a una instalación más segura y confiable.",
@@ -193,7 +174,7 @@ const servicesData = {
 
         title: "Pruebas Eléctricas",
 
-        image: "assets/img/servicios/calidad.jpeg",
+        image: "assets/img/servicios/pruebas.jpeg",
 
         description:
             "Ejecutamos pruebas, mediciones e inspecciones eléctricas para evaluar la condición de equipos e instalaciones, identificar posibles fallas y verificar su correcto funcionamiento antes y durante su operación. Utilizamos equipos especializados y metodologías de prueba adecuadas para cada aplicación, proporcionando información técnica para diagnóstico, mantenimiento y puesta en servicio.",
