@@ -207,31 +207,58 @@ const servicesData = {
 };
 
 
-serviceLinks.forEach(link => {
+if (serviceModal && serviceModalClose) {
 
-    link.addEventListener("click", function () {
+    serviceLinks.forEach(link => {
 
-        const service = servicesData[this.dataset.service];
+        link.addEventListener("click", function () {
 
-        if (!service) return;
+            const service = servicesData[this.dataset.service];
 
-        modalServiceImage.src = service.image;
+            if (!service) return;
 
-        modalServiceImage.alt = service.title;
+            modalServiceImage.src = service.image;
 
-        modalServiceTitle.textContent = service.title;
+            modalServiceImage.alt = service.title;
 
-        modalServiceDescription.textContent = service.description;
+            modalServiceTitle.textContent = service.title;
 
-        modalServiceDetails.innerHTML = service.details;
+            modalServiceDescription.textContent = service.description;
 
-        serviceModal.classList.add("active");
+            modalServiceDetails.innerHTML = service.details;
 
-        document.body.style.overflow = "hidden";
+            serviceModal.classList.add("active");
+
+            document.body.style.overflow = "hidden";
+
+        });
 
     });
 
-});
+
+    function closeServiceModal(){
+
+        serviceModal.classList.remove("active");
+
+        document.body.style.overflow = "";
+
+    }
+
+
+    serviceModalClose.addEventListener("click", closeServiceModal);
+
+
+    serviceModal.addEventListener("click", function(event){
+
+        if(event.target === serviceModal){
+
+            closeServiceModal();
+
+        }
+
+    });
+
+}
 
 
 function closeServiceModal(){
