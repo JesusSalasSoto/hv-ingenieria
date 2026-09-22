@@ -202,6 +202,34 @@ const servicesData = {
             </ul>
         `
 
+    },
+
+    "obra-electromecanica": {
+
+        title: "Obra Eléctromecánica",
+
+        image: "assets/img/servicios/obras.jpeg",
+
+        description:
+            "Ejecutamos y supervisamos trabajos electromecánicos para instalaciones eléctricas de baja, media y alta tensión, desde el montaje de equipos y sistemas hasta su conexión, pruebas y puesta en servicio. Integramos los trabajos de instalación de acuerdo con la ingeniería del proyecto, asegurando una correcta ejecución, coordinación en campo y cumplimiento de los requerimientos técnicos y normativos.",
+
+        details: `
+            <ul>
+                <li>Montaje e instalación de transformadores.</li>
+                <li>Instalación de CCM.</li>
+                <li>Montaje de equipos de baja tensión (tableros, centros de carga, interruptores, arrancadores, etc.).</li>
+                <li>Instalación de interruptores, celdas y equipos de media tensión.</li>
+                <li>Montaje y conexión de equipos de alta tensión.</li>
+                <li>Instalación de canalizaciones, charolas y sistemas de soporte.</li>
+                <li>Tendido, conexión y terminación de conductores.</li>
+                <li>Conexionado de circuitos de fuerza, control y medición.</li>
+                <li>Instalación de sistemas de puesta a tierra.</li>
+                <li>Pruebas y verificaciones de equipos e instalaciones.</li>
+                <li>Supervisión y coordinación de trabajos en campo.</li>
+                <li>Puesta en servicio de las instalaciones.</li>
+            </ul>
+        `
+
     }
 
 };
